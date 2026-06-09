@@ -1,0 +1,27 @@
+{
+  "name": "rxjs-intro-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makson4ikVibeCoder/RxJS-Intro-HW.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Makson4ikVibeCoder/RxJS-Intro-HW/issues"
+  },
+  "homepage": "https://github.com/Makson4ikVibeCoder/RxJS-Intro-HW#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "json-server": "^1.0.0-beta.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
