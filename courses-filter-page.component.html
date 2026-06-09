@@ -1,0 +1,24 @@
+<div class="filter-container">
+  <h2>Фільтрація курсів</h2>
+
+  <div class="filters">
+    <input 
+      type="text" 
+      [formControl]="searchControl" 
+      placeholder="Пошук за назвою..." 
+      class="filter-input"
+    />
+
+    <select [formControl]="categoryControl" class="filter-select">
+      <option value="">Всі категорії</option>
+      <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+    </select>
+  </div>
+
+  <ul class="course-list">
+    <li *ngFor="let course of filteredCourses$ | async" class="course-item">
+      <strong>{{ course.title }}</strong>
+      <p>Категорія: {{ course.category }} | Тривалість: {{ course.duration }}</p>
+    </li>
+  </ul>
+</div>
